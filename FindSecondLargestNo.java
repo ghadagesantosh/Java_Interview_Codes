@@ -21,7 +21,20 @@ public class FindSecondLargestNo {
 		int diff =large - small;
 		System.out.println("diff bet large and small:" + diff);
 
-		
+		    
+//-------------------------------------------------------------------------------------------------
+		int arr2[]={100,10,75,4,90,1};
+        int max=0;
+        int second=0;
+        for(int i=0;i<arr2.length;i++){
+            if(arr2[i]>max){
+                second=max;
+                max=arr2[i];
+            }else if(arr2[i]>second){
+                second = arr2[i];
+            }
+        }
+        System.out.println(second);
 
 	}
 
